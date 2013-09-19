@@ -20,4 +20,21 @@ public class StringsAndThings{
 		}
 		chr = result;
 	}
+
+	public static String captainCrunch(String s){
+		String result = "";
+
+		for (int i = 0; i < s.length();i++) {
+			char c = s.charAt(i);
+			char coded = (char)((int)c + 13);
+			//check if coded is in proper range
+			
+			String str = "" + c;
+
+			result = result + coded;
+		}
+		System.out.println(result);
+		return result;		
+	}
+
 }
