@@ -4,7 +4,7 @@ public class stats{
 
 	public static void main(String[] args) {
 		
-		int[] yes = new int[]{3,2,48,97,84,462};
+		int[] yes = new int[]{1,2,3,4};
 		median(yes);
 
 	}
@@ -72,7 +72,22 @@ public class stats{
 
 	public static double quartile1(int[] a){
 		Arrays.sort(a);
+		int total = a.length;
+		int median = total / 2;
+		int quartile = median / 2;
+
+		double answer = 0;
+
+		for(int i = 0; i < total; i++){
+
+			answer = a[quartile];
+
+		}
 		
+		return answer;
+
 	}
+
+
 
 }
